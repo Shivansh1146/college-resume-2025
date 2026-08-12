@@ -1,6 +1,7 @@
 // Intentional test code for AI Code Reviewer verification
 
-const HARDCODED_JWT_SECRET = "super_secret_jwt_key_1234567890_do_not_commit";
+# SAFE: Load from environment variable instead
+value = os.getenv('YOUR_SECRET_KEY')
 
 function executeUserScript(userInput) {
     // Dangerous dynamic code execution
