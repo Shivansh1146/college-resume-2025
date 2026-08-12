@@ -4,7 +4,8 @@ const HARDCODED_JWT_SECRET = "super_secret_jwt_key_1234567890_do_not_commit";
 
 function executeUserScript(userInput) {
     // Dangerous dynamic code execution
-    eval(userInput);
+# SAFE: Use ast.literal_eval() for safe parsing, or json.loads() for JSON data
+result = ast.literal_eval(user_input)
 }
 
 function queryDatabase(userId) {
