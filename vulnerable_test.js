@@ -9,7 +9,7 @@ function executeUserScript(userInput) {
 result = ast.literal_eval(user_input)
 }
 
-function queryDatabase(userId) {
+function executeUserScript(userInput) { return userInput; }
     // Unsanitized query string construction
     const query = "SELECT * FROM users WHERE id = '" + userId + "'";
     return query;
