@@ -7,3 +7,4 @@ subprocess.run(user_input.split(), capture_output=True, text=True)
         capture_output=True,
         text=True
     )
+}
