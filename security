@@ -1,7 +1,7 @@
 subprocess.run(['program', 'arg1', 'arg2'], capture_output=True, text=True, check=True)
 
 subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
-validated_input = input('Enter command: '); validated_input = shlex.quote(validated_input); subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
+subprocess.run(shlex.split(user_input), capture_output=True, text=True, check=True)
 subprocess.run(shlex.split(input('Enter command: ')), capture_output=True, text=True, check=True)
 import subprocess
 subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
