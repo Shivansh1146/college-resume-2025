@@ -1,4 +1,4 @@
 import subprocess
 
 user_input = input("Enter command: ")
-subprocess.run(shlex.split(user_input), capture_output=True, text=True, check=True)
+subprocess.run(shlex.split(user_input), capture_output=True, text=True, check=True); import shlex
