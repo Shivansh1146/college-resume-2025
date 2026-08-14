@@ -1,13 +1,13 @@
 import subprocess
 
-validated_input = input("Enter command: ")
+validated_input = input('Enter command: '); validated_input = shlex.quote(validated_input); subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
 validated_input = shlex.quote(validated_input)
 subprocess.run(shlex.split(validated_input), capture_output=True, text=True, check=True)
 import subprocess
 import shlex
 user_input = input("Enter command: ")
-validated_input = shlex.quote(user_input)
-subprocess.run(shlex.split(validated_input), capture_output=True, text=True, check=True)
+validated_input = input('Enter command: '); validated_input = shlex.quote(validated_input); subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
+validated_input = input('Enter command: '); validated_input = shlex.quote(validated_input); subprocess.run(['ls', '-l'], capture_output=True, text=True, check=True)
 import shlex
 user_input = input("Enter command: ")
 validated_input = shlex.quote(user_input)
